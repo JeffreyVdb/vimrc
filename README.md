@@ -1,6 +1,8 @@
 VIM Configuration
 =================
 
+Just a VIM configuration directory.
+
 # To install 
 
     cd ~

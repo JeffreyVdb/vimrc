@@ -4,6 +4,8 @@ set shiftwidth=4
 set expandtab
 set nu
 set wmh=0
+set laststatus=2
+set encoding=utf-8
 
 set guifont=Terminus\ 9
 execute pathogen#infect()

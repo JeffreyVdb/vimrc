@@ -7,7 +7,7 @@ set wmh=0
 set laststatus=2
 set encoding=utf-8
 
-set guifont=Terminus\ 9
+set guifont=Terminess\ Powerline
 execute pathogen#infect()
 
 if $TERM == 'linux'
@@ -21,6 +21,7 @@ if has("gui_running") || &t_Co == 256
     set background=dark
     colorscheme xoria256
 else
+    let g:Powerline_symbols = 'unicode'
 	colorscheme default
 	set background=dark
 endif

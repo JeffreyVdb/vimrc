@@ -16,12 +16,14 @@ else
     set t_Co=256
 endif
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
 " Highlighting
 if has("gui_running") || &t_Co == 256
     set background=dark
     colorscheme xoria256
 else
-    let g:Powerline_symbols = 'unicode'
 	colorscheme default
 	set background=dark
 endif

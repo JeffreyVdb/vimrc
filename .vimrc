@@ -6,23 +6,23 @@ set nu
 set wmh=0
 set laststatus=2
 set encoding=utf-8
+let &colorcolumn="80,".join(range(120,999),",")
 
-set guifont=Terminess\ Powerline
 execute pathogen#infect()
-
-if $TERM == 'linux'
-    set t_Co=8
-else
-    set t_Co=256
-endif
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'solarized'
+
+"" Solarized
+set background=dark
+"colorscheme solarized
 
 " Highlighting
 if has("gui_running") || &t_Co == 256
-    set background=dark
+    set guifont=Terminess\ Powerline
     colorscheme solarized
+    set background=dark
 else
 	colorscheme default
 	set background=dark
